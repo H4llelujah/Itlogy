@@ -1,51 +1,212 @@
-.header-text{
-    text-align: center;
-    font-size: 50px;
-    padding: 30px;
+*{
+    padding: 0;
+    margin: 0;
 }
-.main-wrapper{
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    padding: 25px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header .container{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-.main-info{
-    max-width: 500px;
+.logo{
+    vertical-align: bottom;
 }
-.main-img{
-    width: 600px;
+.menu{
+    margin-left: 244px;
 }
-.main-info ul{
-    padding-left: 17px;
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    gap:115px;
 }
-.main-info a{
-    font-size: 20px;
-    color: #404a8f;
+.menu-item a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #030305;
+}
+.menu-item a:hover{
+    border-bottom: 1px solid #030305;
+}
+
+.promo{
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+    padding: 104px 0 154px 0;
+}
+.promo-info{
+    max-width: 855px;
+}
+.promo-title{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110%;
+    color: #030305;
+    margin-bottom: 40px;
+}
+.promo-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #030305;
+    max-width: 502px;
+    margin-bottom: 40px;
+}
+.button{
+    background: #030305;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 344px;
+    transition: background-color 0.5s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #5e5e5e;
+}
+.car{
+    padding: 100px 0;
+}
+.cars-title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #030305;
+    margin-bottom: 40px;
+}
+.car-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.car-item{
+    max-width: 384px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.car-item-img img{
+    vertical-align: bottom;
+}
+.car-item-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #030305;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+.car-item-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.car-item-point{
+    width: 110px;
+    height: 92px;
+    margin-bottom: 13px;
+}
+.car-item-point img{
+    margin-bottom: 11px;
+}
+.car-item-point > div:nth-child(2){
+   font-weight: bold;
+}
+.car-item .button{
+    padding: 15px 0;
+}
+.order{
+    padding-top: 60px;
+    overflow: hidden;
+}
+.order .container{
+    position: relative;
+    padding-bottom: 121px;
+}
+.order-title{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #030305;
+    margin-bottom: 20px;
+}
+.order-text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    margin-bottom: 60px;
 }
 .form{
+    max-width: 344px;
+}
+.order-input{
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+    outline: none;
+}
+.order-input::placeholder{
+    color: #5D5D5F;
+}
+.order-input .button{
+    width: 100%;
+}
+.order-img{
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+footer{
+    padding: 25px 0;
+    border-top: 1px solid #E5E5E5;
+}
+footer .container{
     display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-    max-width: 480px;
+    align-items: center;
+    justify-content: space-between;
 }
-.form-header{
-    font-size: 35px;
-    text-align: center;
+.rights{
+    font-size: 15px;
+    line-height: 18px;
+    color: #030305;
 }
-.form input{
-    padding: 10px;
-    font-size: 23px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    border: 2px solid #d7d7d7;
-}
-.form-btn{
-    background-color: green;
-    color: white;
-    padding: 16px;
-    border-radius: 5px;
-    border: 0;
-    font-size: 20px;
-}
-h1 span{
-    color: green;
-}
+
+
+
+
+
+
