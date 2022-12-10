@@ -33,7 +33,7 @@
                     распространенных серийных
                     машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за рулем
                     настоящей легенды и узнать, на что она способна за пределами гоночной трассы!</p>
-                <button class="button">Посмотреть автомобили</button>
+                <button class="button" id="promo-action">Посмотреть автомобили</button>
             </div>
         </div>
     </section>
@@ -67,7 +67,7 @@
                             <div>2019</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -93,7 +93,7 @@
                             <div>2017</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -119,7 +119,7 @@
                             <div>2010</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -145,7 +145,7 @@
                             <div>2019</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -171,7 +171,7 @@
                             <div>2018</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -197,7 +197,7 @@
                             <div>2019</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -223,7 +223,7 @@
                             <div>2018</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -249,7 +249,7 @@
                             <div>2019</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
                 <div class="car-item">
                     <div class="car-item-img">
@@ -275,7 +275,7 @@
                             <div>2019</div>
                         </div>
                     </div>
-                    <button class="button">Забронировать</button>
+                    <button class="button car-button">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -285,10 +285,10 @@
             <h2 class="order-title">Узнать цену и забронировать</h2>
             <p class="order-text">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</p>
             <form action="" class="form">
-                <input class="order-input" type="text" placeholder="Ваше имя">
-                <input class="order-input" type="text" placeholder="Ваш телефон">
-                <input class="order-input" type="text" placeholder="Автомобиль, который вас интересует">
-                <button class="button">Узнать цену</button>
+                <input class="order-input" type="text" placeholder="Ваше имя" id="name">
+                <input class="order-input" type="text" placeholder="Ваш телефон" id="phone">
+                <input class="order-input" type="text" placeholder="Автомобиль, который вас интересует" id="car">
+                <button class="button" type="button" id="order-action">Узнать цену</button>
             </form>
             <img class="order-img" src="src/img/rolls.png" alt="">
         </div>
@@ -300,5 +300,6 @@
         <div class="rights">Все права защищены</div>
     </div>
 </footer>
+<script src="src/js/script.js"></script>
 </body>
 </html>
